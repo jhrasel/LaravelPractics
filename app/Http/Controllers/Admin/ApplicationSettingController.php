@@ -75,7 +75,7 @@ class ApplicationSettingController extends Controller
         if($request !== null){
 
             $image = $request->getClientOriginalName();
-            $imageName = $image.'-'.time().'.'. $request->getClientOriginalExtension();
+            $imageName = $image.'.'. $request->getClientOriginalExtension();
             $saveUrl = 'uploads/'.$data.'/';
 
             if (!file_exists($saveUrl)) {
